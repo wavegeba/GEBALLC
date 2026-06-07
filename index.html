@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEBA LLC | GeoAI for Agricultural and Environmental Intelligence</title>
+  <title>GEBA | GeoAI for Agricultural and Environmental Intelligence</title>
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -61,20 +61,28 @@
 
     .hero-content { max-width: 850px; }
 
-    .eyebrow {
-      color: #9be7a8;
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-      margin-bottom: 22px;
-    }
-
     h1 {
-      font-size: clamp(2.7rem, 6vw, 5.7rem);
-      line-height: 1.03;
-      font-weight: 800;
-      margin-bottom: 28px;
+.geba-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: clamp(2.3rem, 5.5vw, 5.2rem);
+  line-height: 1.03;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.geba-title span {
+  display: block;
+  color: #eaf5ef;
+}
+
+.geba-title strong {
+  color: #7ee787;
+  font-weight: 900;
+  margin-right: 6px;
+  text-shadow: 0 0 18px rgba(126, 231, 135, 0.45);
+}
     }
 
     .subtitle {
@@ -337,17 +345,30 @@
     <a href="#environment">Environmental Monitoring</a>
     <a href="#ai">Advanced AI</a>
     <a href="#multisensor">Multisensor Integration</a>
-    <a href="#dialogue">Dialogue & Trust</a>
+    <a href="#dialogue">Conflict Mitigation</a>
     <a href="#about">About / Contact</a>
   </nav>
 </header>
 
 <main class="hero">
   <div class="hero-content">
-    <div class="eyebrow">Geo-Informatics Environment & Agriculture Bridging AI Consulting LLC</div>
-    <h1>GeoAI for Agricultural and Environmental Intelligence</h1>
-    <p class="subtitle">Transforming Earth observation, environmental data, and artificial intelligence into actionable insights.</p>
-    <p class="description">GEBA develops practical GeoAI solutions for sustainable agriculture, environmental monitoring, multisensor interoperability, and decision-ready intelligence.</p>
+
+    <h1 class="geba-title">
+      <span><strong>G</strong>eo-Informatics</span>
+      <span><strong>E</strong>nvironment & Agriculture</span>
+      <span><strong>B</strong>ridging</span>
+      <span><strong>A</strong>rtificial Intelligence</span>
+    </h1>
+
+    <p class="subtitle">
+      Transforming Earth observation, environmental data, and artificial intelligence
+      into practical GeoAI solutions.
+    </p>
+
+    <p class="description">
+      Supporting sustainable agriculture, environmental monitoring, multisensor interoperability,
+      and decision-ready intelligence.
+    </p>
     <div class="buttons">
       <a href="#agriculture" class="btn btn-primary">Explore Solutions</a>
       <a href="#about" class="btn btn-secondary">Contact GEBA</a>
