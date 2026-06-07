@@ -1,32 +1,298 @@
-<h2>GeoAI and Remote Sensing Solutions</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEBA Consulting LLC</title>
 
-<p>
-Advanced geospatial analytics for agricultural and environmental applications.
-</p>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-<h3>Research Areas</h3>
+    body {
+      color: #ffffff;
+      background: #06120f;
+    }
 
-<ul>
-<li>GeoAI</li>
-<li>Remote Sensing</li>
-<li>Crop Yield Prediction</li>
-<li>Soil Moisture Modeling</li>
-<li>Environmental Monitoring</li>
-<li>SAR-Optical Integration</li>
-</ul>
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(5, 18, 15, 0.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-<h3>Projects</h3>
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #d8f5df;
+    }
 
-<ul>
-<li>GEOAI-LYME</li>
-<li>CONUS Crop Yield Forecasting</li>
-<li>NISAR Applications</li>
-<li>Hydrology and Soil Moisture Analytics</li>
-</ul>
+    nav a {
+      color: #e8f5ec;
+      text-decoration: none;
+      margin-left: 32px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
 
-<p>
-Contact: info@gebaconsulting.com
-</p>
+    nav a:hover {
+      color: #7ee787;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      background:
+        linear-gradient(rgba(3, 20, 15, 0.72), rgba(3, 20, 15, 0.88)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin-top: 70px;
+    }
+
+    .eyebrow {
+      color: #9be7a8;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+      line-height: 1.02;
+      font-weight: 800;
+      margin-bottom: 28px;
+    }
+
+    .subtitle {
+      font-size: clamp(1.3rem, 2.5vw, 2.1rem);
+      line-height: 1.35;
+      color: #e7f5eb;
+      margin-bottom: 34px;
+      max-width: 780px;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #c7d8ce;
+      max-width: 680px;
+      margin-bottom: 42px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: #7ee787;
+      color: #062016;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      color: #ffffff;
+    }
+
+    section {
+      padding: 90px 8%;
+      background: #06120f;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #e8f5ec;
+    }
+
+    .section-text {
+      color: #b9cfc2;
+      max-width: 760px;
+      line-height: 1.7;
+      margin-bottom: 44px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #10251d, #0a1914);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card h3 {
+      color: #9be7a8;
+      margin-bottom: 14px;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      color: #c7d8ce;
+      line-height: 1.6;
+      font-size: 0.98rem;
+    }
+
+    footer {
+      padding: 34px 8%;
+      background: #030907;
+      color: #9fb5a8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 18px 6%;
+      }
+
+      nav a {
+        margin-left: 14px;
+        font-size: 0.85rem;
+      }
+
+      .hero {
+        padding: 0 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">GEBA</div>
+    <nav>
+      <a href="#solutions">Solutions</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Geo-Informatics Environment & Agriculture Bridging AI (GEBA) LLC</div>
+
+      <h1>GeoAI for Agricultural and Environmental Intelligence</h1>
+
+      <p class="subtitle">
+        Transforming Earth observation, environmental data, and artificial intelligence into actionable insights.
+      </p>
+
+      <p class="description">
+        GEBA Consulting develops geospatial AI solutions for crop monitoring, environmental forecasting,
+        remote sensing analytics, and decision-ready intelligence.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact GEBA</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="solutions">
+    <h2 class="section-title">Solutions</h2>
+    <p class="section-text">
+      GEBA integrates remote sensing, machine learning, environmental modeling, and spatial analytics
+      to support agricultural and environmental decision-making.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>GeoAI Modeling</h3>
+        <p>Machine learning and deep learning workflows for spatial prediction, risk mapping, and environmental analytics.</p>
+      </div>
+
+      <div class="card">
+        <h3>Remote Sensing Analytics</h3>
+        <p>Multi-sensor analysis using optical, SAR, microwave, and climate data for land and agricultural monitoring.</p>
+      </div>
+
+      <div class="card">
+        <h3>Agricultural Intelligence</h3>
+        <p>Crop yield forecasting, biomass estimation, soil moisture mapping, and field-scale decision support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-text">
+      Featured projects include GeoAI-based disease risk mapping, CONUS-scale crop yield forecasting,
+      SAR–optical integration, NISAR applications, and soil moisture intelligence.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>GEOAI-LYME</h3>
+        <p>Spatial AI framework for Lyme disease risk monitoring, forecasting, and environmental driver analysis.</p>
+      </div>
+
+      <div class="card">
+        <h3>CONUS Yield Intelligence</h3>
+        <p>County-scale crop yield prediction using Earth observation, meteorological data, and GeoAI modeling.</p>
+      </div>
+
+      <div class="card">
+        <h3>NISAR & SAR Analytics</h3>
+        <p>Advanced radar-based monitoring for vegetation, soil moisture, and agricultural applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <p class="section-text">
+      GEBA Consulting LLC focuses on GeoAI, remote sensing, and environmental intelligence for agricultural,
+      hydrological, ecological, and public-health applications.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">
+      Email: info@gebaconsulting.com
+    </p>
+  </section>
+
+  <footer>
+    © 2026 GEBA Consulting LLC. All rights reserved.
+  </footer>
 
 </body>
 </html>
