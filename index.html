@@ -618,20 +618,17 @@
 <!-- <button class="chatbot" onclick="alert('GEBA AI assistant will be available soon.')">
   💬 Ask GEBA
 </button> -->
+
 <div id="chatbox" class="chatbox">
   <div class="chat-header">GEBA AI Assistant</div>
+
   <div id="chat-messages" class="chat-messages">
     <div class="bot-message">Hello. How can GEBA assist you today?</div>
   </div>
+
   <div class="chat-input-row">
     <input id="chat-input" type="text" placeholder="Ask GEBA AI..." />
     <button onclick="sendGEBAChat()">Send</button>
-    document.getElementById("chat-input").addEventListener("keydown", function(event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        sendGEBAChat();
-      }
-    });
   </div>
 </div>
 
