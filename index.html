@@ -651,12 +651,12 @@ async function sendGEBAChat() {
 
   try {
     const response = await fetch("https://geba-chat.vercel.app/api/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ message })
-    });
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message })
+      });
 
     const data = await response.json();
 
