@@ -590,7 +590,7 @@
     <p class="role-label">Founder</p>
     <h3>Dr. Geba</h3>
     <p>Dr. Geba is a multidisciplinary expert with more than 20 years of experience across electrical engineering, environmental engineering, remote sensing, GeoAI, and data science. His work focuses on developing practical geospatial intelligence for agricultural and environmental applications.</p>
-    <p>His recent work has been recognized through the GeoGov Summit Achievement in Geospatial Research Award for advancing SAR–optical interoperability and improving the reliability of Earth observation for agricultural monitoring.</p>
+    <p>His recent work has been recognized with the GeoGov Award – Innovation in Geospatial Research for advancing SAR–optical interoperability and improving the reliability of Earth observation for agricultural monitoring.</p>
   </div>
 
   <div class="profile-card">
@@ -604,7 +604,7 @@
   <div class="award-card">
     <img src="assets/images/GeoGovAward.jpg" alt="GeoGov Summit award">
     <div>
-      <h3>GeoGov Summit Achievement in Geospatial Research Award</h3>
+      <h3> GeoGov Award – Innovation in Geospatial Research</h3>
       <p>Dr. Geba was recognized for addressing a long-standing challenge in agricultural monitoring: how rainfall distorts radar signals and affects vegetation mapping accuracy.</p>
       <p>The work developed a practical framework to understand and correct precipitation effects on SAR-based vegetation indicators, improving SAR–optical interoperability and strengthening reliable Earth observation for agricultural monitoring and food-security applications.</p>
     </div>
@@ -628,11 +628,11 @@
 
   <div class="chat-input-row">
     <input id="chat-input" type="text" placeholder="Ask GEBA AI..." />
-    <button onclick="sendGEBAChat()">Send</button>
+    <button type="button" onclick="sendGEBAChat()">Send</button>
   </div>
 </div>
 
-<button class="chatbot" onclick="toggleChatbox()">
+<button type="button" class="chatbot" onclick="toggleChatbox()">
   💬 Ask GEBA
 </button>
 
@@ -692,12 +692,14 @@ async function sendGEBAChat() {
 document.addEventListener("DOMContentLoaded", function() {
   const input = document.getElementById("chat-input");
 
-  input.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      sendGEBAChat();
-    }
-  });
+  if (input) {
+    input.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        sendGEBAChat();
+      }
+    });
+  }
 });
 </script>
 
