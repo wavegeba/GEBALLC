@@ -142,7 +142,35 @@ nav a {
   color: #ffffff;
   transform: translateY(-1px);
 }
-    
+    19s 동안 생각함
+
+네. Multisensor section 설명 문장 바로 뒤에 Related paper ✎ 붙이고, 그 옆에 지도 아이콘 🗺️ 붙이면 됩니다. 현재 해당 문장은 #multisensor 섹션의 설명 문장입니다.
+
+1. CSS 추가
+
+기존 .paper-link는 그대로 두고, 지도 아이콘용 CSS만 추가하세요.
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: rgba(126, 231, 135, 0.14);
+  color: #7ee787;
+  font-size: 0.9rem;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+.map-link:hover {
+  background: #7ee787;
+  color: #06120f;
+  transform: translateY(-1px);
+}
     .buttons {
       display: flex;
       gap: 14px;
@@ -638,7 +666,14 @@ nav a {
      rel="noopener"
      class="paper-link"
      aria-label="Open related SAR–Optical interoperability paper"
-     title="Related paper">Related paper ✎</a> </p>
+     title="Related paper">Related paper ✎</a>
+  <a href="https://gebaconsultingllc.users.earthengine.app/view/sar--optic"
+     target="_blank"
+     rel="noopener"
+     class="map-link"
+     aria-label="Open SAR and Optical Earth Engine map app"
+     title="SAR and Optical images">🗺️</a>
+</p>
   </div>
 
   <div class="two-col">
